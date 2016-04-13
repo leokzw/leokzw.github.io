@@ -1,0 +1,35 @@
+.modal-icon {
+	width: 96px; height: 96px;
+	display: inline-block;
+    border: 5px solid #fff;
+    border-radius: 50%;
+	font-size: 36px;
+	line-height: 96px;
+	color: #3c4043;
+}
+.md-text {
+	font-family: 'proxima_nova_ththin';
+	margin: 25px 70px 50px;
+	color: #838383;
+}
+.md-bt {
+	background: #25ae90;
+	border: 1px solid #25ae90;
+	text-transform: uppercase;
+	&:hover, &:focus {
+		background: transparent;
+		color: #25ae90;
+	}
+}
+.md-close {
+	width: 46px; height: 42px;
+	&::before {
+		font-family: 'icomoon';
+  		font-size: 16px;
+  		line-height: 42px;
+	}
+	&:hover, &:focus {
+		background: #5b5e63;
+		color: #fff;
+	}
+}

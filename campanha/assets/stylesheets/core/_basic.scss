@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Basic styles
+////////////////////////////////////////////////////////////////////////////////
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	position: relative;
+    color: $body-color;
+    // background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkUlEQVR42pWSQQrAIAwE8/+/evKiB7FsS5fAhkQPqTF0BmW1tdbuve8xBta3Wmsb838W/YMec8MmkaQwVsOnkEQw90aokDiYUgpOJag5J0qucCIRAcp+0+VJ0GP2neBC4mEUYzyRCIyZf0iZJIIlRlQoIaxiSUGuk8DyDiSmCsbeHCyCCvYxxjnXscpDoqSA2T8r6+HomAUULQAAAABJRU5ErkJggg==');
+    //background: #fafafa;
+}
+
+a {
+    color: $link-color;
+
+    &:hover { color: $link-hover-color; }
+    //&:visited { color: $link-visited-color; }
+    &:active { color: $link-active-color; }
+}
+
+form, input, img, button {
+	outline: none;
+	&:active {
+		outline: none;
+	}
+}
+
+.icon {
+    position: relative;
+    padding-right: 8px;
+    top: 3px;
+}
+
+#preloader-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10002;
+    border-collapse: collapse;
+}
+#preloader-content td{
+    vertical-align: middle; background: #111;
+    @extend %text-align-center;
+}
+#preloader-content img{
+    width: 50px;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
