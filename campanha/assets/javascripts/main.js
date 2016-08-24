@@ -36,7 +36,7 @@ $(function (){
 
 	play
 		.click(function() {
-			alert("Desculpe! O vídeo em agradecimento por 1 ano de campanha #AjudeLeokz ainda não foi concluído. Em breve estará disponível, aguarde!");
+			//alert("Desculpe! O vídeo em agradecimento por 1 ano de campanha #AjudeLeokz ainda não foi concluído. Em breve estará disponível, aguarde!");
   			$("body").addClass('modal-open'); // adiciona classe
   			video.show(); // display block 
   			//alert("O site ainda não foi finalizado, aguarde o novo vídeo da campanha #AjudeLeokz!"); 
@@ -48,7 +48,7 @@ $(function (){
 		.click(function() {
   			$("body").removeClass('modal-open'); // remove classe
   			video.hide(); // display none
-  			$(".iframer")[0].src = "https://www.youtube.com/embed/LTrzSSf0YlA?rel=0"; // "Zera" o vídeo
+  			$(".iframer")[0].src = "https://www.youtube.com/embed/nlKzB0os5Gk?rel=0"; // "Zera" o vídeo
 		});
 	downloadBt
 		.click(function() {

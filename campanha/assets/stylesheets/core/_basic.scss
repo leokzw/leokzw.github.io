@@ -15,7 +15,7 @@ body {
 
 a {
     color: $link-color;
-
+    text-decoration: none;
     &:hover { color: $link-hover-color; }
     //&:visited { color: $link-visited-color; }
     &:active { color: $link-active-color; }
